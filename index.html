@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Glowstone • Price Finder</title>
+  <meta name="theme-color" content="#111827">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css?v=2" />
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="icons/icon-192.png" alt="Glowstone" class="logo"/>
+      <h1>Glowstone • Price Finder</h1>
+    </div>
+  </header>
+
+  <section class="searchbar">
+    <div class="searchwrap">
+      <input id="query" type="search" placeholder="Type material/colour (e.g., Stratus)" autocomplete="off" spellcheck="false">
+      <button id="clearBtn" class="ghost">Clear</button>
+      <ul id="suggestions" class="suggestions" hidden></ul>
+    </div>
+  </section>
+
+  <main id="result"></main>
+
+  <footer>
+    <small>$ / m² • Keyword search • Share-ready</small>
+  </footer>
+
+  <script src="app.js?v=2"></script>
+</body>
+</html>
